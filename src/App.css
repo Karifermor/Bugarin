@@ -420,7 +420,8 @@ margin: 20px 5px 10px 5px;
 .wppLogoDiv > div {
   margin: 10%;
   padding-top: 10%;
-
+  min-width: 50%;
+  min-width: 70%;
 }
 
 
