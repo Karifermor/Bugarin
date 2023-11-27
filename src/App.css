@@ -1,0 +1,534 @@
+
+/* NAVBAR */
+.navbar{
+  height: 120px;
+}
+a:link{
+  text-decoration:none
+}
+.divLogo{
+  padding-top: 35px;
+  margin-right: 15px;
+}
+
+.navbar .dropdown {
+  z-index: 100;
+}
+
+.navbar .collapse{
+  z-index: 100;
+}
+
+
+
+/* HOME */
+.img{
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 30px;
+}
+.row{
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+}
+.container{
+  margin-top: 40px;
+}
+
+.getStartedDiv{
+  /* background-color: rgb(246, 241, 241); */
+  background-color: rgb(187, 214, 141); 
+  width: 90%;
+  padding: 20px;
+  margin: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px; 
+}
+
+.text-uppercase{
+  margin: 5px;
+  width: 90%;
+}
+.getStartedDiv h6{
+  padding: 10px;
+  text-align: justify;
+  font-family: 'Cormorant Garamond', serif, bold;
+  font-size:larger;
+}
+
+/* .getStarted h6{
+  padding: 10px;
+  text-align: justify;
+  font-size:larger;
+  font-family: 'Cormorant Garamond', serif;
+} */
+.getStarted{
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 30px;
+}
+.contentGetStarted{
+  width: 90%;
+  text-align: justify;
+  margin-right: 20px;
+}
+.homeContainer{
+  justify-content: center;
+  align-items: center;
+}
+.contactLink{
+  color: black;
+}
+.btn{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 5px;
+  color: lightgrey;
+}
+.contactHome{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+
+
+/* ITEMS CONTAINER */
+.imgItems{
+  width: 100%;
+  height: 100%;
+}
+.itemsDiv{
+  /* margin: 50px; */
+  padding: 5%;
+  background-color: rgb(187, 214, 141);
+}
+.imgContainer{
+  margin: 15px;
+  padding: 10px;
+  height: 50%;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.txtContainer{
+ text-align: justify;
+}
+.txtContainer h3{
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* ABOUT */
+.storyContent p{
+  padding: 10px;
+  text-align: justify;
+}
+.storyContent{
+  text-align: justify;
+  width: 60%;
+  margin: 20%;
+}
+.why{
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  width: 80%;
+  margin: 10%;
+  padding: 20px;
+
+
+  background-color: rgb(187, 214, 141);
+  /* width: 90%;
+  padding: 20px;
+  margin: 30px; */
+  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  min-height: 150px; 
+}
+.why h3{
+  margin-right: 20px;
+}
+.whyContent{
+ margin-right: 5%;
+}
+.teamContent p{
+  text-align: justify;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.teamContent img{
+  width: 50%;
+  height: 50%;
+}
+
+
+/* FOOTER */
+#footer {
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  /* margin-top: 20px; */
+  flex-shrink: 0;
+  flex-direction: row;
+}
+#footer img:hover {
+  filter: drop-shadow(2px 4px 6px grey);
+}
+#footer .copy-right {
+margin-top: 15px;
+font-size: small;
+}
+.icons{
+width: 20px;
+height: 20px;
+margin: 20px 5px 10px 5px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .getStartedDiv {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  .contentGetStarted {
+    margin-left: 20px; 
+    width: 50%;
+  }
+  .getStarted{
+    width: 40%;
+  }
+  .img{
+    border-radius: 50%;
+    padding: 30px;
+  }
+  .itemsDiv{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+  }
+  .txtContainer{
+    width: 40%;
+  }
+  .imgContainer{
+    height: 90%;
+    width: 50%;
+    margin-right: 5%;
+  }
+}
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .img {
+    max-width: 70%; 
+    padding: 15px;
+  }
+  /* About */
+  .why{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  /* ItemsContainer */
+  .itemsDiv{
+    margin: 30px;
+    padding: 5%;
+    background-color: rgb(187, 214, 141);
+  }
+  /* HOME */
+  .sections{
+    max-width: 70%;
+  }
+  .contactHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactHome button{
+    width: 150px;
+    height: 50px;
+  }
+  /* .wppDiv{
+    max-width: 70%;
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 1463px){
+  .contactHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+  .contactHome button{
+    width: 150px;
+    height: 50px;
+  }
+
+  /* CONTACT */
+  .wppDiv .getStartedDiv .getStarted {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .wppDiv .getStartedDiv .contentGetStarted {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .why h3{
+   font-size: large;
+  }
+  /* HOME */
+  .contactHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactHome button{
+    width: 150px;
+    height: 50px;
+  }
+  /* CONTACT */
+  .wppDiv .getStartedDiv .getStarted {
+
+    align-items: center;
+    width: auto;
+  }
+  .wppDiv .getStartedDiv .contentGetStarted {
+    align-items: center;
+    width: auto;
+  }
+}
+
+/* CSS for screens 432px and narrower */
+@media (max-width: 432px) {
+  .getStarted h5,
+  .contentGetStarted h6 {
+    text-align: left; /* or you can use text-align: unset; to reset it to the default */
+  }
+  /* ABOUT */
+  .teamContent img{
+    width: 50%;
+    height: 50%;
+  }
+}
+
+
+
+/* DECOR & EVENT*/
+.decorContent{
+  padding: 5% 10% 5%;
+}
+ .imgGallery{
+  margin: 10px;
+ }
+
+
+@media (max-width: 991px) {
+  .navbar .dropdown{
+    background-color: white;
+  }
+  .navbar .collapse{
+    background-color: white;
+  }
+   /* ABOUT */
+   .teamContent img{
+    width: 30%;
+    height: 30%;
+  }
+}
+
+
+
+.eventGallery{
+  background-color: rgb(187, 214, 141);
+}
+.eventGallery p{
+  text-align: justify;
+}
+.eventGallery h5{
+  margin-top: 30px;
+  font-style: italic;
+}
+.eventContent{
+  padding: 30px;
+}
+
+.wppDiv{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  max-width: 70%;
+  background-color: rgb(187, 214, 141);
+  /* margin-right: 10%;
+  margin-left: 10%; */
+  margin: 0 auto;
+  box-shadow: gray 1px 4px 15px;
+  border-radius: 8px;
+}
+.wppDiv .getStartedDiv{
+  align-items: center;
+}
+.contactDiv p{
+  padding: 5px;
+}
+.wppLogoDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin-top: 10px; */
+  padding-left: 30px;
+  max-width: 50%;
+}
+
+.wppLogoDiv > div {
+  margin: 10%;
+  padding-top: 10%;
+
+}
+
+
+
+
+/* @media screen and (max-width: 767px) {
+  .wppLogoDiv > div {
+    margin: 10%;
+    padding-top: 10%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+} */
+
+
+.contactDiv{
+  width: 30%;
+  height: 30rem;
+  margin: 5%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #fffefe;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 244, 244); 
+  /* width: 60%;
+  height: 90%; */
+  padding: 20px;
+  /* margin: 30px; */
+  /* align-items: center;
+  display: flex; */
+  /* flex-direction: row; */
+  /* min-height: 150px;  */
+  /* justify-content: space-between; */
+}
+ /* for desktop */
+ .whatsapp_float {
+  /* position: fixed; */
+  /* display: flex; */
+  width: 60px;
+  height: 60px;
+  /* bottom: 150px;
+  right: 40px; */
+  /* background-color: #25d366; */
+  /* color: #FFF; */
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  /* box-shadow: 2px 2px 3px #999; */
+  z-index: 100;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/* .divWpp{
+  background-color: rgb(245, 244, 244); 
+  width: 60%;
+  height: 90%;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 150px; 
+
+  justify-content: space-between;
+} */
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+      margin-top: 10px;
+  }
+
+  .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      /* bottom: 20px;
+      right: 10px; */
+      font-size: 22px;
+  }
+
+  .wppLogoDiv > div {
+    margin: 10%;
+    padding-top: 10%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* CONTACT */
+/* .wppDiv .getStartedDiv .getStarted {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.wppDiv .getStartedDiv .contentGetStarted {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+} */
+
